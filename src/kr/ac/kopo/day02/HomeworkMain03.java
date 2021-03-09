@@ -34,6 +34,7 @@ public class HomeworkMain03 {
 		int num2 =sc.nextInt();
 		int change = num2-num1;
 		
+		
 		if (num1>num2) {
 			System.out.printf("%d원이 부족합니다.",(num1-num2));	
 		}
@@ -42,19 +43,48 @@ public class HomeworkMain03 {
 		System.out.println("거스름돈 : "+change);
 		int thousand = change/1000;
 		System.out.println("1000원: " +thousand);
-		int hthousand = (change -thousand*1000 )/500;
-		System.out.println("500원: " + hthousand);
-		int hundred = (thousand -hthousand*500 )/100;
+		int hhundred =change%1000/500;
+		System.out.println("500원: " + hhundred);
+		int hundred = change%1000%500/100;
 		System.out.println("100원: " +hundred) ;
-		int hhundred = (hundred-hundred*100)/50;
-		System.out.println("50원: " +hhundred) ;
-		int ten = (hundred-hundred*100)/50;
+		int hten = change%1000%500%100/50;
+		System.out.println("50원: " +hten) ;
+		int ten = change%1000%500%100%50/10;
 		System.out.println("10원: " +ten) ;
 		
 		System.out.println("<방식2>");
+		System.out.println("거스름돈 : "+change);
 		
+	    switch(thousand){
+	    	case 0:
+	    		break;
+	    	default :
+	    		System.out.println("1000원: " +thousand) ;
+	    	}
+	    
+	    switch(hhundred) {
+	    	case 0:
+	    		break;
+	    	default: 
+    		System.out.println("500원: " +hhundred) ;}
+	    switch(hundred) {
+    	case 0:
+    		break;
+    	default: 
+		System.out.println("100원: " +hundred) ;}
+	    switch(hten) {
+    	case 0:
+    		break;
+    	default: 
+		System.out.println("50원: " +hten) ;}
+	    switch(ten) {
+    	case 0:
+    		break;
+    	default: 
+		System.out.println("10원: " +ten) ;}
+		}
 		
 		}
 	}
 
-}
+
