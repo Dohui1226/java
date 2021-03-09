@@ -34,15 +34,17 @@ public class HomeworkMain04 {
 		int num1 =sc.nextInt();
 		System.out.print("두번째 정수 입력: ");
 		int num2 =sc.nextInt();
-		
 		boolean result = (num1%num2==0 && num2!=0);
-		System.out.println(result);
-			
-		if (result==true) {
-			System.out.println(num1 +"가"+ num2+"의 배수인지 판단 결과: "+ result);
-					
-			} else {
-			System.out.println(num1 +"가"+ num2+"의 배수인지 판단 결과: "+ result);
+		
+		if (num2==0) {
+			System.out.println(num1 +"가"+ num2+"의 배수인지 판단 결과: False");
+		}
+		
+			else if (result==true) {
+			System.out.println(num1 +"가"+ num2+"의 배수인지 판단 결과: True");
+		}
+		else {
+			System.out.println(num1 +"가"+ num2+"의 배수인지 판단 결과: False");
 			}
 
 }}
