@@ -10,16 +10,13 @@ public class LoopMain01 {
 	while(cnt<=3){
 		System.out.println("Hello World");
 		++cnt;
-	}	
+	}	// 여기서 cnt변수는 while문안에 만들어진것이 아니기 때문에 Main 메소드 안에서 계속 존재.
 	System.out.println("----------");
 	*/	
 	
 	for (int cnt=1; cnt<=3; ++cnt) {
-		System.out.println("Hello World");
+			System.out.println("Hello World");
+	} //for문안에 만들어진 변수는 for 문이 사라지면 삭제 된다.
 	}
-	}
-	
-	
-	
 
 }
