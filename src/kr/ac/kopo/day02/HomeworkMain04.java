@@ -30,21 +30,22 @@ public class HomeworkMain04 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("첫번째 정수 입력: ");
+		System.out.print("첫번째 정수를 입력하세요: ");
 		int num1 =sc.nextInt();
-		System.out.print("두번째 정수 입력: ");
+		System.out.print("두번째 정수를 입력하세요: ");
 		int num2 =sc.nextInt();
-		boolean result = (num1%num2==0 && num2!=0);
-		
+		System.out.println("<조건연산자>");
+		System.out.println(num1 +"가 "+ num2+ " 의 배수인지 판단결과: "+(num2!=0 && num1%num2==0? true:false));
+		System.out.println("<if문>");
 		if (num2==0) {
-			System.out.println(num1 +"가"+ num2+"의 배수인지 판단 결과: False");
+			System.out.println(num1 +"가 "+ num2+" 의 배수인지 판단결과: False");
 		}
 		
-			else if (result==true) {
-			System.out.println(num1 +"가"+ num2+"의 배수인지 판단 결과: True");
+			else if (num1%num2 ==0) {
+			System.out.println(num1 +"가 "+ num2+" 의 배수인지 판단결과: True");
 		}
-		else {
-			System.out.println(num1 +"가"+ num2+"의 배수인지 판단 결과: False");
-			}
-
-}}
+			else {
+			System.out.println(num1 +"가 "+ num2+" 의 배수인지 판단결과: False");
+		}	
+	}
+}

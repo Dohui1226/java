@@ -10,10 +10,10 @@ public class HomeworkMain02 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("반지름 입력: ");
+		System.out.print("반지름을 입력하세요: ");
 		int num =sc.nextInt();
-		double PAI_NAME = 3.14;
-		System.out.printf("반지름 %d일때, 원둘레는 %.3f이고, 원넓이는 %.3f이다. ",num ,2* num*PAI_NAME,num*num*PAI_NAME );
+		final double PI = 3.14;
+		System.out.printf("반지름이 %d일때 ,원의 둘레는 %.3f이고, 원의 넓이는 %.3f입니다. ",num ,2* num*PI,num*num*PI );
 
 	}
 
